@@ -1,0 +1,253 @@
+
+/* ***************** CORPO DO SITE ***************** */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #dedede;
+}
+
+/* .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 280px;
+    max-width: 1024px;
+    margin: auto;
+
+} */
+
+/****************** SEGUNDO CONTEÚDO ******************/
+
+.details{
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.details h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: 0.6s all;
+}
+
+.details p{
+    font-size: 14px;
+    transition: 0.6s all;
+}
+
+.details a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgb(38, 71, 114);
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #2c3e50;
+    border-radius: 50px;
+    transition: 0.6s all;
+}
+
+.details::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #c07d69da;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.6s all;
+}
+
+.details:hover::before{
+    width: 100%;
+}
+
+.details:hover h2,.details:hover p{
+    color: #fff;
+}
+
+.details:hover a{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* IMAGENS */
+.details img{
+    width: 100%;
+    height: 50%;
+}
+
+/***************************************************/
+
+/* *********************AGENDA ***************** */
+
+.scheduling__form {
+    background: linear-gradient(#6c7097,#273285);
+   
+}
+
+.appointment__form__title {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 30PX;
+}
+
+.client__message {
+    /* margin-right: -150px; */
+    margin: 0 auto;
+    align-items: center;
+   
+}
+
+.button__message {
+    align-items: center;
+    appearance: none;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative; 
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.button__message:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button__message:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+     transform: translateY(-2px);    
+}
+
+.button__message:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+} 
+
+/***********************  **************************/
+
+/********************* RODAPÉ **********************/
+
+.footer{
+    background:#886c58;
+    border-top: 1px solid rgb(3, 3, 3);
+}
+
+.footer> h4{
+    color: rgb(37, 33, 33);
+    margin-top: 25px;
+    
+}
+
+.footer p a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(14, 15, 15);
+} 
+
+.footer p a:hover {
+    padding-left: 30px;
+    border-left: 4px solid #40498f;
+    color:#2f3776;
+    transition: .4s;
+}
+
+.social__networks ul {
+    margin-right: 50px;
+    margin-top: 10px;
+    display:inline-flex;
+
+}
+
+.social__networks ul li {
+    margin: 1px;
+    list-style: none;
+}
+
+.social__networks ul li a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.social__networks ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+}
+
+.social__networks ul li a .fab {
+    width: 100%;
+    height: 100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(50px - 12px);
+    font-size:20px;
+    color: #262626;
+    transition: .5s;
+}
+  
+.social__networks ul li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+}
+
+.social__networks ul li:nth-child(2) a:hover .fab {
+    color: #e4405f;
+}
+
+.social__networks ul li:nth-child(4) a:hover .fab {
+    color: #25D366;
+}
+
+
+
+/******************* A FAZER SÁBADO ****************  */
+
+/* ***** FRONT-END ***** */
+
+/* centralizar formulário */
+/* alinhar social__networks para telas menores*/
+/* elemento hover nos dropdown do menu */
+/* mudar font-family do site  */
+/* criar conteúdo principal */
+/* criar páginas do navbardropdown */
+/* paleta de cores para o site */
