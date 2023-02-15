@@ -29,15 +29,15 @@
               Estética Corporal
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Ultrassom Cavitacional</a>
-              <a class="dropdown-item" href="#">Intradermoterapia</a>
-              <a class="dropdown-item" href="#">Laser Galaxy Fiber</a>
+              <a class="dropdown-item" href="./cavitacional.php">Ultrassom Cavitacional</a>
+              <a class="dropdown-item" href="./intradermo.php">Intradermoterapia</a>
+              <a class="dropdown-item" href="./peeling.php">Peeling corporal</a>
             </div>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="agenda.php">Contatos</a>
-          </li>
+          </li> -->
 
         </ul>
 
